@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#696969"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Widget.AppCompat.Toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Tienwogik che Kilosunen Jehovah"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+
+                />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/songzero"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:layout_below="@id/toolbar"
+        android:textSize="18dp"
+        android:lineSpacingExtra="1.5dp"/>
+
+</RelativeLayout>
